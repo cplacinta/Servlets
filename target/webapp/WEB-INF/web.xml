@@ -1,0 +1,47 @@
+<web-app>
+
+  <servlet>
+    <servlet-name>LinkTracker</servlet-name>
+    <servlet-class>com.placinta.servlet.LinkTracker</servlet-class>
+
+    <!--<init-param>
+      <param-name>html</param-name>
+      <param-value>htmlservlet</param-value>
+    </init-param>
+
+    <init-param>
+      <param-name>xml</param-name>
+      <param-value>xmlservlet</param-value>
+    </init-param>-->
+
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LinkTracker</servlet-name>
+    <url-pattern>linktracker</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>HtmlServlet</servlet-name>
+    <servlet-class>com.placinta.servlet.HtmlServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HtmlServlet</servlet-name>
+    <url-pattern>htmlservlet</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet>
+    <servlet-name>XmlServlet</servlet-name>
+    <servlet-class>com.placinta.servlet.XmlServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>XmlServlet</servlet-name>
+    <url-pattern>xmlservlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
